@@ -20,6 +20,21 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+# ---------------------------------------------------------
+# GOOGLE SEARCH CONSOLE VERIFICATION
+# ---------------------------------------------------------
+st.html(
+    """
+    <script>
+    const meta = document.createElement("meta");
+    meta.name = "google-site-verification";
+    meta.content = "Ejh0TxxtsuIWMbqQBvTuxOGu7OTL2mnxDqn0XPXg8tY";
+    document.head.appendChild(meta);
+    </script>
+    """,
+    unsafe_allow_javascript=True
+)
+
 
 # ---------------------------------------------------------
 # CUSTOM INTERFACE DESIGN
